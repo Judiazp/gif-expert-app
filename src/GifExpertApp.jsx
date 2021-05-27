@@ -5,17 +5,11 @@ const GiffExpertApp = () => {
 
     const [categories, setCategories] = useState(['Goku', 'Ironman', 'Spiderman']);
 
-    const handleAdd = () => {
-        setCategories([ 'nueva categoria', ...categories]);
-    }
-
     return (
         <>
             <h2>GiffExpertApp</h2>
-            <AddCategory/>
+            <AddCategory setCategories={ setCategories }/>
             <hr />
-
-            <button onClick={ handleAdd }>Agregar categoría</button>
 
             <ol>
                 {
