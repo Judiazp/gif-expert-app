@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import AddCategory from './components/addCategory';
 
 const GiffExpertApp = () => {
 
@@ -11,6 +12,7 @@ const GiffExpertApp = () => {
     return (
         <>
             <h2>GiffExpertApp</h2>
+            <AddCategory/>
             <hr />
 
             <button onClick={ handleAdd }>Agregar categoría</button>
