@@ -8,8 +8,8 @@ const GifGrid = ( {category} ) => {
 
     return(
         <>
-            <h3 className="animate__animated animate__fadeInLeftBig">{ category }</h3>
             { loading && <p>Loading...</p>} 
+            <h3 className="animate__animated animate__fadeInDown">{ category }</h3>
             {/* El && funciona para evaluar solo una condicion */}
             <div className="grid-content">
                 {
