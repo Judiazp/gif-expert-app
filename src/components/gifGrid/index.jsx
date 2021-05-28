@@ -1,20 +1,16 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
+import { useFetchGif } from '../../hooks/useFetchGifs';
 import GifCard from '../gifCard';
-import { getGifs } from '../helpers/getGifs';
 
 const GifGrid = ( {category} ) => {
 
-    const [images, setImages] = useState([]);
-    
-    useEffect( () => {
-        getGifs( category ).then( setImages )
-    }, [ category ])
-
-   
+    const { data:images ,loading} = useFetchGif( category );
 
     return(
         <>
-            <h3>{ category }</h3>
+            <h3 className="animate__animated animate__fadeInLeftBig">{ category }</h3>
+            { loading && <p>Loading...</p>} 
+            {/* El && funciona para evaluar solo una condicion */}
             <div className="grid-content">
                 {
                     images.map( gif => (
