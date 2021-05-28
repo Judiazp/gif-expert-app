@@ -10,13 +10,12 @@ const GifGrid = ( {category} ) => {
         <>
             { loading && <p>Loading...</p>} 
             <h3 className="animate__animated animate__fadeInDown">{ category }</h3>
-            {/* El && funciona para evaluar solo una condicion */}
             <div className="grid-content">
-                {
-                    images.map( gif => (
-                        <GifCard key={gif.id} gif={ gif } />
-                    ))
-                }
+                    {
+                        images.map( gif => (
+                            <GifCard key={gif.id} gif={ gif } />
+                        ))
+                    }
             </div>
         </>
     )
