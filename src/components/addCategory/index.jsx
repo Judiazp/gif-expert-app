@@ -10,7 +10,7 @@ const AddCategory = ({setCategories}) => {
     }
 
     const handleSubmit = (e) => {
-        e.preventDefault()
+        e.preventDefault() 
         if (inputValue.trim().length >= 3) {
             setCategories(categories =>[ inputValue, ...categories]);
         }
