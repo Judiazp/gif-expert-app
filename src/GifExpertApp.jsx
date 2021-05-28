@@ -4,7 +4,7 @@ import GifGrid from './components/gifGrid';
 
 const GiffExpertApp = () => {
 
-    const [categories, setCategories] = useState([]);
+    const [categories, setCategories] = useState(['']);
 
     return (
         <>
