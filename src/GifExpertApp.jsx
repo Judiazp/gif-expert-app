@@ -7,16 +7,17 @@ const GiffExpertApp = () => {
     const [categories, setCategories] = useState(['']);
 
     return (
-        <>
-            <h2>GiffExpertApp</h2>
-            <AddCategory setCategories={ setCategories }/>
-            <hr />
-            <ol>
-                {
-                    categories.map(category => <GifGrid key={category} category={ category }/>)
-                }
-            </ol>
-        </>
+        <div id="addCategory" className="contenedor">
+            <nav>
+                <a class="logotipo" href="#">GiffExpertApp</a>
+                <div>
+                    <AddCategory setCategories={ setCategories }/>
+                </div>
+            </nav>
+            {
+                categories.map(category => <GifGrid key={category} category={ category }/>)
+            }
+        </div>
     )
 }
 
