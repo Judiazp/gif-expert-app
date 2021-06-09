@@ -150,3 +150,19 @@ body.dark .grid .card {
   width: 100%;
   text-align: center;
 }
+
+@media (max-width: 690px) {
+  form input {
+    width: 10em;
+  }
+
+  .grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 450px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
