@@ -9,9 +9,9 @@ const GifGrid = ( {category} ) => {
     return(
         <>
             { loading && <p>Loading...</p>} 
-            {/* <div align="center">
+            <div align="center">
                 <h2 className="title-gifGrid animate__animated animate__fadeInDown">{ category }</h2>
-            </div> */}
+            </div>
             <div className="grid">
                 {
                     images.map( gif => (
