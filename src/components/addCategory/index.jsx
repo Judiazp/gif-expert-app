@@ -13,7 +13,6 @@ const AddCategory = ({setCategories}) => {
         e.preventDefault() 
         if (inputValue.trim().length >= 3) {
             setCategories(categories =>[ inputValue, ...categories]);
-            setInputValue('')
         }
     }
 

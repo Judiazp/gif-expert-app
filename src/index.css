@@ -151,6 +151,16 @@ body.dark .grid .card {
   text-align: center;
 }
 
+.title-gifGrid {
+  margin-top: 2em;
+  padding-bottom: 1em;
+  border-bottom: 1px solid #C8C8C8;
+}
+
+body.dark .title-gifGrid {
+  color: #C8C8C8;
+}
+
 @media (max-width: 690px) {
   form input {
     width: 10em;
