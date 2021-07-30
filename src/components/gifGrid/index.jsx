@@ -12,7 +12,7 @@ const GifGrid = ( {category} ) => {
             <div align="center">
                 <h2 className="title-gifGrid animate__animated animate__fadeInDown">{ category }</h2>
             </div>
-            <div className="grid">
+            <div className="grid animate__animated  animate__fadeInUp">
                 {
                     images.map( gif => (
                         <GifCard key={gif.id} gif={ gif } />
