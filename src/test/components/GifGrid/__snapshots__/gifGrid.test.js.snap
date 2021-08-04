@@ -1,0 +1,44 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pruebas en <GifGrid /> Debe mostrar el componente <GifGrid /> 1`] = `
+<Fragment>
+  <p>
+    Loading...
+  </p>
+  <div
+    align="center"
+  >
+    <h2
+      className="title-gifGrid animate__animated animate__fadeInDown"
+    >
+      Una categoria
+    </h2>
+  </div>
+  <div
+    className="grid animate__animated  animate__fadeInUp"
+  />
+</Fragment>
+`;
+
+exports[`Pruebas en <GifGrid /> debe mostrar items cuando se cargan imagenes con useFetch 1`] = `
+<Fragment>
+  <div
+    align="center"
+  >
+    <h2
+      className="title-gifGrid animate__animated animate__fadeInDown"
+    >
+      Una categoria
+    </h2>
+  </div>
+  <div
+    className="grid animate__animated  animate__fadeInUp"
+  >
+    <GifCard
+      key="ABC"
+      title="Un title"
+      url="https://directionImages/cualquiera/algo.jpg"
+    />
+  </div>
+</Fragment>
+`;

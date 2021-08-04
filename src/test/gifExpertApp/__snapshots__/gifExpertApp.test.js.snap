@@ -1,0 +1,93 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pruebas en <GifExpertApp /> Debe mostrar <GifExpertApp /> 1`] = `
+<div
+  className="contenedor"
+  id="addCategory"
+>
+  <nav>
+    <a
+      class="logotipo"
+      href="/"
+    >
+      GiffExpertApp
+    </a>
+    <div>
+      <AddCategory
+        setCategories={[Function]}
+      />
+    </div>
+    <button
+      className="switch"
+      onClick={[Function]}
+    >
+      <span>
+         
+        <i
+          class="fas fa-sun"
+        />
+         
+      </span>
+      <span>
+         
+        <i
+          class="fas fa-moon"
+        />
+         
+      </span>
+    </button>
+  </nav>
+  <GifGrid
+    category=""
+    key=""
+  />
+</div>
+`;
+
+exports[`Pruebas en <GifExpertApp /> Debe mostrar una lista de categorias 1`] = `
+<div
+  className="contenedor"
+  id="addCategory"
+>
+  <nav>
+    <a
+      class="logotipo"
+      href="/"
+    >
+      GiffExpertApp
+    </a>
+    <div>
+      <AddCategory
+        setCategories={[Function]}
+      />
+    </div>
+    <button
+      className="switch"
+      onClick={[Function]}
+    >
+      <span>
+         
+        <i
+          class="fas fa-sun"
+        />
+         
+      </span>
+      <span>
+         
+        <i
+          class="fas fa-moon"
+        />
+         
+      </span>
+    </button>
+  </nav>
+  <GifGrid
+    category="spiderman"
+    key="spiderman"
+  />
+  <GifGrid
+    category="hello"
+    key="hello"
+  />
+</div>
+`;
