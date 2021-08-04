@@ -2,12 +2,12 @@ import React, { useEffect, useState } from 'react';
 import AddCategory from './components/addCategory';
 import GifGrid from './components/gifGrid';
 
-const GiffExpertApp = () => {
+const GiffExpertApp = ({ defaultCategories=['']}) => {
 
     const initialStateDarkMode =  JSON.parse(localStorage.getItem('darkMode')) || false
     const [darkMode, setDarkMode] = useState(initialStateDarkMode)
 
-    const [categories, setCategories] = useState(['']);
+    const [categories, setCategories] = useState(defaultCategories);
     
     useEffect(() => {
         localStorage.setItem('darkMode', JSON.stringify(darkMode))
