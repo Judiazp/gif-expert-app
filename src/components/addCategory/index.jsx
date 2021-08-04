@@ -13,6 +13,7 @@ const AddCategory = ({setCategories}) => {
         e.preventDefault() 
         if (inputValue.trim().length >= 3) {
             setCategories(categories =>[ inputValue, ...categories]);
+            setInputValue('')
         }
     }
 
@@ -21,6 +22,7 @@ const AddCategory = ({setCategories}) => {
             <input 
                 type="text"
                 placeholder="Buscar Gifs"
+                value={ inputValue }
                 onChange= { handleChange }
             />
         </form>
