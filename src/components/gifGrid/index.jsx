@@ -15,7 +15,7 @@ const GifGrid = ( {category} ) => {
             <div className="grid animate__animated  animate__fadeInUp">
                 {
                     images.map( gif => (
-                        <GifCard key={gif.id} gif={ gif } />
+                        <GifCard key={gif.id} url={ gif.url } title={ gif.title } />
                     ))
                 }
             </div>

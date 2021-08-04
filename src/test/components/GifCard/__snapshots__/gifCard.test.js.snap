@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pruebas en el componente GifCard Debe mostrar el componente GifCard 1`] = `
+<div
+  className="card animate__animated animate__fadeInDown"
+>
+  <img
+    alt="title"
+    src="https://urlGif.com"
+  />
+  <h4
+    className="gif-title"
+  >
+     
+    title
+     
+  </h4>
+</div>
+`;
